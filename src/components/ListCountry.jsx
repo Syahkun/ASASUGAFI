@@ -11,10 +11,10 @@ const ListCountry = (props, changeRouter) => {
   };
   return (
     <Fragment>
-      <div class="list-country my-2">
+      <div className="list-country my-2">
         <div className="container">
-          <div class="row row-cols-3">
-            <div class="col-lg-1">
+          <div className="row row-cols-3">
+            <div className="col-lg-1">
               <Link
                 onClick={() => changeRouter("laos")}
                 className="nav-link nav-country"
@@ -23,7 +23,7 @@ const ListCountry = (props, changeRouter) => {
                 Laos
               </Link>
             </div>
-            <div class="col-lg-1">
+            <div className="col-lg-1">
               <Link
                 onClick={() => changeRouter("brunei")}
                 className="nav-link nav-country"
@@ -32,7 +32,7 @@ const ListCountry = (props, changeRouter) => {
                 Brunei
               </Link>
             </div>
-            <div class="col-lg-1">
+            <div className="col-lg-1">
               <Link
                 onClick={() => changeRouter("cambodia")}
                 className="nav-link nav-country"
@@ -41,7 +41,7 @@ const ListCountry = (props, changeRouter) => {
                 Kamboja
               </Link>
             </div>
-            <div class="col-lg-1">
+            <div className="col-lg-1">
               <Link
                 onClick={() => changeRouter("indonesia")}
                 className="nav-link nav-country"
@@ -50,7 +50,7 @@ const ListCountry = (props, changeRouter) => {
                 Indonesia
               </Link>
             </div>
-            <div class="col-lg-1">
+            <div className="col-lg-1">
               <Link
                 onClick={() => changeRouter("malaysia")}
                 className="nav-link nav-country"
@@ -59,7 +59,7 @@ const ListCountry = (props, changeRouter) => {
                 Malaysia
               </Link>
             </div>
-            <div class="col-lg-1">
+            <div className="col-lg-1">
               <Link
                 onClick={() => changeRouter("myanmar")}
                 className="nav-link nav-country"
@@ -68,7 +68,7 @@ const ListCountry = (props, changeRouter) => {
                 Myanmar
               </Link>
             </div>
-            <div class="col-lg-1">
+            <div className="col-lg-1">
               <Link
                 onClick={() => changeRouter("philippines")}
                 className="nav-link nav-country"
@@ -77,7 +77,7 @@ const ListCountry = (props, changeRouter) => {
                 Filipina
               </Link>
             </div>
-            <div class="col-lg-1">
+            <div className="col-lg-1">
               <Link
                 onClick={() => changeRouter("thailand")}
                 className="nav-link nav-country"
@@ -86,7 +86,7 @@ const ListCountry = (props, changeRouter) => {
                 Thailand
               </Link>
             </div>
-            <div class="col-lg-1">
+            <div className="col-lg-1">
               <Link
                 onClick={() => changeRouter("vietnam")}
                 className="nav-link nav-country"
@@ -95,9 +95,9 @@ const ListCountry = (props, changeRouter) => {
                 Vietnam
               </Link>
             </div>
-            <div class="col-lg-1">
+            <div className="col-lg-1">
               <Link
-                onClick={() => changeRouter("laos")}
+                onClick={() => changeRouter("singapore")}
                 className="nav-link nav-country"
                 to="#"
               >
@@ -105,7 +105,7 @@ const ListCountry = (props, changeRouter) => {
               </Link>
             </div>
 
-            <div class="col-lg-2">
+            <div className="col-lg-2">
               <Link
                 onClick={() => changeRouter("timor-leste")}
                 className="nav-link nav-country"

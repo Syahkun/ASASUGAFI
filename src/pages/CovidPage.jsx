@@ -2,16 +2,19 @@ import React, {Fragment} from "react";
 
 import ListCountry from "../components/ListCountry";
 import { generateCovid } from "../store/actions/covidActions";
+import {getListNews} from "../store/actions/newsActions";
 
 import { connect } from "react-redux";
 import Navigation from "../components/Navigation";
 import CovidDetail from "./CovidDetail";
-import CovidDetailComp from "../components/CovidDetailComp";
+import NewsList from "./NewsList";
 
 class CovidPage extends React.Component {
     componentDidMount = async () => {
         const paramCategory = await this.props.match.params.category;
         this.props.generateCovid(paramCategory);
+        this.props.getListNews()
+
     };
 
     handleRequestCategory = async (categoryName) => {
@@ -26,11 +29,12 @@ class CovidPage extends React.Component {
                 <Navigation {...this.props}/>
                 <ListCountry handleRouter={(e) => this.handleRequestCategory(e)}{...this.props}/>
                 <CovidDetail/>
+                <NewsList />
             </Fragment>
         );
     }
 }
 
-const mapDispatchToProps = { generateCovid };
+const mapDispatchToProps = { generateCovid, getListNews };
 
 export default connect(() => ({}), mapDispatchToProps)(CovidPage);
