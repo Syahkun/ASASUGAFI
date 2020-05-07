@@ -32,11 +32,16 @@ const Profile = (props) => {
           >
             Profile
           </h1>
-          <img src={props.dataUser.avatar} class="avatar" alt="avatar icon" style={{width: "50vmin"}}/>
-          <p>
+          <img
+            src={props.dataUser.avatar}
+            class="avatar"
+            alt="avatar icon"
+            style={{ width: "50vmin" }}
+          />
+          <p className="mt-3">
             <label>Name:</label> {props.dataUser.username}
           </p>
-          <p>
+          <p className="mt-3">
             <label>Email:</label> {props.dataUser.email}
           </p>
         </section>
@@ -48,8 +53,8 @@ const Profile = (props) => {
 const mapStateToProps = (state) => {
   return {
     dataUser: state.user,
-  }
-}
+  };
+};
 
-export default connect(mapStateToProps) (Profile);
+export default connect(mapStateToProps)(Profile);
 // export default Profile;
