@@ -1,0 +1,50 @@
+.nav-link {
+  margin-right: 30px;
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 14px;
+}
+body {
+  background-color: #1b1b2f;
+  font-family: montserrat;
+}
+.form-group {
+  margin-top: 20px;
+}
+.welcome .welButton {
+  font-size: 16px;
+}
+.welButton,
+.btnSignin {
+  background-color: #e43f5a;
+  color: white;
+}
+tr {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.profile {
+  font-size: 14px;
+}
+.jumbotron {
+  background-image: url(../images/_111954083_tv061192098.jpg);
+  background-size: cover;
+  height: 550px;
+}
+@media (min-width: 992px) {
+  .nav-link {
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  .welcome,
+  .signin,
+  .profile {
+    height: 70vmin;
+    width: 70vmin;
+    background-color: hsla(0, 0%, 100%, 0.1);
+    border-radius: 20px;
+  }
+  .profile {
+    font-size: 16px;
+  }
+}
