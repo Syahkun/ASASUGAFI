@@ -13,7 +13,7 @@ class Home extends React.Component {
         {this.props.dataUser.is_login ? (
           <React.Fragment>
             <div>
-              <Navigation />
+              <Navigation {...this.props}/>
               <div className="jumbotron jumbotron-fluid">
                 <div className="container">
                   <Welcome />
