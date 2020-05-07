@@ -1,6 +1,7 @@
 import React from "react";
 import { render } from "@testing-library/react";
 import "../css/style.css";
+import {Link} from "react-router-dom";
 
 const Welcome = () => {
   return (
@@ -11,9 +12,9 @@ const Welcome = () => {
             Welcome to the <br />
             <strong>Southeast Asia Corona Map</strong>
           </h2>
-          <button type="button" class="btn welButton">
+          <Link to='/covid'><button type="button" class="btn welButton">
             Click here to see the map
-          </button>
+          </button></Link>
         </div>
       </div>
     </div>
