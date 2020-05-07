@@ -48,6 +48,18 @@ tr {
   font-size: 12px;
   text-align: center;
 }
+.news {
+  width: 100%;
+  height: fit-content;
+  background-color: hsla(0, 0%, 0%, 0.2);
+  border-radius: 20px;
+  padding-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.covDet {
+  border-radius: 30px !important;
+}
 @media (min-width: 992px) {
   .nav-link {
     font-size: 20px;
