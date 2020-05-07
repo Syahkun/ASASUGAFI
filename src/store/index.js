@@ -8,10 +8,12 @@ import thunk from 'redux-thunk';
 import userReducer from "./reducers/userReducer";
 
 import covidReducers from "./reducers/covidReducers";
+import newsReducers from "./reducers/newsReducers";
 
 const rootReducer = combineReducers({
     covid: covidReducers,
-    user: userReducer
+    user: userReducer,
+    news: newsReducers
 });
 
 const store = createStore(rootReducer, applyMiddleware(thunk));
