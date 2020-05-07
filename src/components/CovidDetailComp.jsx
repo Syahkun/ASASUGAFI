@@ -1,6 +1,6 @@
 import React, { Fragment, Component } from "react";
 import CanvasJSReact from "../canvas/canvasjs.react";
-import Footer from "./Footer";
+import "../css/style.css";
 const CanvasJS = CanvasJSReact.CanvasJS;
 const CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
@@ -58,10 +58,12 @@ const CovidDetailComp = (props) => {
 
   return (
     <Fragment>
-      <div className="card-group rounded-lg my-4 container">
+      <div className="card-group my-4 covDet container">
         <div className="card row">
           <div className="card-title mt-3 mb-0">
-            <h3>{country}</h3>
+            <h2>
+              <strong>{country}</strong>
+            </h2>
           </div>
           <div className="row mt-0">
             <div className="card-body col-lg-6 row-xs-12">
