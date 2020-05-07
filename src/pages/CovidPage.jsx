@@ -24,11 +24,8 @@ class CovidPage extends React.Component {
         return (
             <Fragment>
                 <Navigation {...this.props}/>
-                <ListCountry
-                    handleRouter={(e) => this.handleRequestCategory(e)}
-                    {...this.props}
-                />
-                <CovidDetail {...this.props}/>
+                <ListCountry handleRouter={(e) => this.handleRequestCategory(e)}{...this.props}/>
+                <CovidDetail/>
             </Fragment>
         );
     }
