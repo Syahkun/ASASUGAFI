@@ -2,7 +2,7 @@ const initialState = {
     username: "",
     email: "",
     avatar: "",
-    is_login: false,
+    is_login: true,
 };
 
 export default function userReducer(userState = initialState, action) {

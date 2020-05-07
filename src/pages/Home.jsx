@@ -14,8 +14,8 @@ class Home extends React.Component {
         <React.Fragment>
           <div>
             <Navigation />
-            <div class="jumbotron jumbotron-fluid">
-              <div class="container">
+            <div className="jumbotron jumbotron-fluid">
+              <div className="container">
                 <Welcome />
               </div>
             </div>
@@ -40,6 +40,6 @@ const mapStateToProps = (state) => {
   return {
     dataUser: state.user,
   }
-}
+};
 
 export default connect(mapStateToProps) (Home);

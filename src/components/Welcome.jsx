@@ -12,7 +12,7 @@ const Welcome = () => {
             Welcome to the <br />
             <strong>Southeast Asia Corona Map</strong>
           </h2>
-          <Link to='/covid'><button type="button" class="btn welButton">
+          <Link to='/covid'><button type="button" className="btn welButton">
             Click here to see the map
           </button></Link>
         </div>

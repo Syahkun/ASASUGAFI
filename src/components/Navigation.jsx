@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 // import { render } from "@testing-library/react";
 import "../css/style.css";
 const Navigation = () => {
@@ -23,24 +24,24 @@ const Navigation = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"/>
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link text-white" href="/">
+                <Link className="nav-link text-white" to="/">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white" href="/">
+                <Link className="nav-link text-white" to="/profile">
                   Profile
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white" href="/">
+                <Link className="nav-link text-white" to="/signin">
                   Login
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
