@@ -16,7 +16,7 @@ export const generateCovid = (country = "indonesia") => {
                 }
             })
             .then((response) => {
-                console.log(response.data.response[0]);
+                console.warn("hello", response.data.response[0].cases.new);
                 dispatch({
                     type: "REQUEST_DATA_SUCCESS",
                     payload: response.data.response[0]
