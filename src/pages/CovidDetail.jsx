@@ -5,17 +5,14 @@ import CovidDetailComp from "../components/CovidDetailComp";
 import ListCountry from "../components/ListCountry";
 
 class CovidDetail extends React.Component {
-    componentDidMount = async () => {
-        const paramCategory = await this.props.match.params.category;
-        this.props.generateCovid(paramCategory);
-    };
 
     render() {
         return (
             <Fragment>
-                <ListCountry />
                 <div>
-                    <CovidDetailComp />
+                    {/*<CovidDetailComp />*/}
+                    this is covid detail
+                    <CovidDetailComp/>
                 </div>
             </Fragment>
         );
