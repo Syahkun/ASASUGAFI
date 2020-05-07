@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 // import { render } from "@testing-library/react";
 import "../css/style.css";
 const Navigation = () => {
@@ -24,7 +24,7 @@ const Navigation = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"/>
+            <span className="navbar-toggler-icon" />
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
@@ -41,6 +41,11 @@ const Navigation = () => {
               <li className="nav-item">
                 <Link className="nav-link text-white" to="/signin">
                   Login
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link text-white" to="/news">
+                  News
                 </Link>
               </li>
             </ul>

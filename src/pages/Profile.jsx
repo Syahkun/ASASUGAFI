@@ -2,7 +2,7 @@ import React from "react";
 import { Redirect } from "react-router-dom";
 import Header from "../components/Navigation";
 import { connect } from "react-redux";
-
+import Footer from "../components/Footer";
 const Profile = (props) => {
   //get data is_login, email and full_name from local storage
   // const is_login = JSON.parse(localStorage.getItem("is_login"));
@@ -24,27 +24,31 @@ const Profile = (props) => {
     return (
       <React.Fragment>
         <Header {...props} />
-        <section className="content">
-          <h1
-            style={{
-              textalign: "center",
-            }}
-          >
-            Profile
-          </h1>
-          <img
-            src={props.dataUser.avatar}
-            class="avatar"
-            alt="avatar icon"
-            style={{ width: "50vmin" }}
-          />
-          <p className="mt-3">
-            <label>Name:</label> {props.dataUser.username}
-          </p>
-          <p className="mt-3">
-            <label>Email:</label> {props.dataUser.email}
-          </p>
-        </section>
+        <div className="container d-flex justify-content-center align-items-center">
+          <section className="content">
+            <h1
+              style={{
+                textalign: "center",
+              }}
+              className="mt-2"
+            >
+              Profile
+            </h1>
+            <img
+              src={props.dataUser.avatar}
+              class="avatar"
+              alt="avatar icon"
+              style={{ width: "50vmin" }}
+            />
+            <p className="mt-3">
+              <label>Name:</label> {props.dataUser.username}
+            </p>
+            <p className="mt-3">
+              <label>Email:</label> {props.dataUser.email}
+            </p>
+          </section>
+        </div>
+        <Footer />
       </React.Fragment>
     );
   }

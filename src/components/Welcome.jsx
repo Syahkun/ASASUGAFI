@@ -8,13 +8,15 @@ const Welcome = () => {
     <div className="WelContainer">
       <div className="container welcome d-flex justify-content-center align-items-center">
         <div className="d-block">
-          <h2 className="text-white mb-5">
+          <h2 className="mb-5">
             Welcome to the <br />
-            <strong>Southeast Asia Corona Map</strong>
+            <strong>Southeast Asia Corona Counter</strong>
           </h2>
-          <Link to='/covid'><button type="button" className="btn welButton">
-            Click here to see the map
-          </button></Link>
+          <Link to="/covid">
+            <button type="button" className="btn welButton">
+              Click here to see the map
+            </button>
+          </Link>
         </div>
       </div>
     </div>
