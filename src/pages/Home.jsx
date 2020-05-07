@@ -5,32 +5,33 @@ import Welcome from "../components/Welcome";
 // import Profile from "../components/Profile";
 import { Redirect } from "react-router-dom";
 import { connect } from "react-redux";
-
+import Footer from "../components/Footer";
 class Home extends React.Component {
   render() {
     return (
       <div>
-        {this.props.dataUser.is_login? (
-        <React.Fragment>
-          <div>
-            <Navigation />
-            <div className="jumbotron jumbotron-fluid">
-              <div className="container">
-                <Welcome />
+        {this.props.dataUser.is_login ? (
+          <React.Fragment>
+            <div>
+              <Navigation />
+              <div className="jumbotron jumbotron-fluid">
+                <div className="container">
+                  <Welcome />
+                </div>
               </div>
+              {/* <SignIn /> */}
+              {/* <Profile /> */}
             </div>
-            {/* <SignIn /> */}
-            {/* <Profile /> */}
-          </div>
-        </React.Fragment>
-        ):(
+          </React.Fragment>
+        ) : (
           <Redirect
-          to={{
-            pathname:"/signin",
-            state: { message: "gagal login bro..."},
-          }}
+            to={{
+              pathname: "/signin",
+              state: { message: "gagal login bro..." },
+            }}
           />
         )}
+        <Footer />
       </div>
     );
   }
@@ -39,7 +40,7 @@ class Home extends React.Component {
 const mapStateToProps = (state) => {
   return {
     dataUser: state.user,
-  }
+  };
 };
 
-export default connect(mapStateToProps) (Home);
+export default connect(mapStateToProps)(Home);

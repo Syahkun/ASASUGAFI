@@ -97,7 +97,7 @@ const ListCountry = (props, changeRouter) => {
             </div>
             <div class="col-lg-1">
               <Link
-                onClick={() => changeRouter("laos")}
+                onClick={() => changeRouter("singapore")}
                 className="nav-link nav-country"
                 to="#"
               >

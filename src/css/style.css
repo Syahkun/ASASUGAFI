@@ -26,16 +26,27 @@ tr {
 .profile {
   font-size: 14px;
 }
-.jumbotron {
+.jumbotron-fluid {
   background-image: url(../images/jerry-wang-Pvf_WTiFGng-unsplash.jpg);
   background-size: cover;
   width: 100%;
   height: 460px;
-  background-position: 10px;
+  background-position: 0;
+  background-repeat: no-repeat;
+  /* margin-left: -10px; */
+  /* padding-left: -12px; */
 }
 
 .content {
   color: white;
+}
+.WelContainer h2 {
+  color: white;
+  text-shadow: 0 0 3px grey;
+}
+.footer-text {
+  font-size: 12px;
+  text-align: center;
 }
 @media (min-width: 992px) {
   .nav-link {
@@ -50,11 +61,21 @@ tr {
     background-color: hsla(0, 0%, 0%, 0.2);
     border-radius: 20px;
   }
+  .content {
+    height: 80vmin;
+    width: 80vmin;
+    background-color: hsla(0, 0%, 0%, 0.2);
+    border-radius: 20px;
+  }
   .profile {
     font-size: 16px;
   }
   .jumbotron {
     height: 540px;
+  }
+  .footer-text {
+    font-size: 16px;
+    text-align: left;
   }
 }
 
@@ -75,4 +96,9 @@ tr {
 /* profile */
 .avatar {
   border-radius: 50%;
+}
+
+/* footer */
+.icon-socmed {
+  width: 5vmin;
 }
