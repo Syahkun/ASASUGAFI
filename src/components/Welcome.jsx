@@ -1,12 +1,12 @@
 import React from "react";
 // import { render } from "@testing-library/react";
 import "../css/style.css";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Welcome = () => {
   return (
     <div className="WelContainer">
-      <div className="container welcome d-flex justify-content-center align-items-center my-5">
+      <div className="container welcome d-flex justify-content-center align-items-center">
         <div className="d-block">
           <h2 className="text-white mb-5">
             Welcome to the <br />

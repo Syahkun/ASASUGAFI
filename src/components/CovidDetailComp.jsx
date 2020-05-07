@@ -31,7 +31,7 @@ const CovidDetailComp = (props) => {
 
     const options2 = {
         title: {
-            text: "Basic Column Chart"
+            text: "Case and Death"
         },
         data: [
             {
@@ -49,12 +49,12 @@ const CovidDetailComp = (props) => {
         <Fragment>
                 <div className="card-group container">
                     <div className="card row">
-                        <div className="card-title">{country}</div>
+                        <div className="card-title"><h1>{country}</h1></div>
                         <div className="row">
-                            <div className="card-body col-6 col-xs-12">
+                            <div className="card-body col-lg-6 row-xs-12">
                                 <CanvasJSChart options = {options}/>
                             </div>
-                            <div className="card-body col-6 col-xs-12">
+                            <div className="card-body col-lg-6 row-xs-12">
                                 <CanvasJSChart options = {options2}/>
                             </div>
                         </div>
