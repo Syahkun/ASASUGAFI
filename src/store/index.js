@@ -5,10 +5,13 @@ import {
 } from "redux";
 import thunk from 'redux-thunk';
 
+import userReducer from "./reducers/userReducer";
+
 import covidReducers from "./reducers/covidReducers";
 
 const rootReducer = combineReducers({
-    covid: covidReducers
+    covid: covidReducers,
+    user: userReducer
 });
 
 const store = createStore(rootReducer, applyMiddleware(thunk));
