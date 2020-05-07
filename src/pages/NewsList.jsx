@@ -4,6 +4,7 @@ import NewsDetailComp from "../components/NewsDetailComp";
 
 
 class NewsDetail extends React.Component {
+
     render() {
         const listNews = this.props.data;
         let filteredNews = listNews.filter((item) => {
@@ -31,6 +32,5 @@ const mapStateToProps = (state) => {
         data: state.news.listNews
     };
 };
-
 
 export default connect(mapStateToProps)(NewsDetail);

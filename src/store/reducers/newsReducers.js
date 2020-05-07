@@ -2,6 +2,7 @@ const initialState = {
     listNews: [],
     isLoading: true,
     search: "",
+    allNews: []
 };
 
 export default function newsReducer(stateNews = initialState, action) {
@@ -11,6 +12,7 @@ export default function newsReducer(stateNews = initialState, action) {
                 ...stateNews,
                 isLoading: false,
                 listNews: action.payload.news,
+                allNews: action.payload.news,
             };
         case "ACTIVATE_LOADING":
             return {

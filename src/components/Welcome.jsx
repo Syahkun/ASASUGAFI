@@ -14,7 +14,7 @@ const Welcome = () => {
           </h2>
           <Link to="/covid">
             <button type="button" className="btn welButton">
-              Click here to see the map
+              Click here to see the data
             </button>
           </Link>
         </div>
