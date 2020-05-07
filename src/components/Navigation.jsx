@@ -2,7 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 // import { render } from "@testing-library/react";
 import "../css/style.css";
-const Navigation = () => {
+import {doLogout} from "../store/actions/actionUser";
+import {connect} from "react-redux";
+const Navigation = (props) => {
+
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light">
@@ -38,11 +41,19 @@ const Navigation = () => {
                   Profile
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link text-white" to="/signin">
-                  Login
-                </Link>
-              </li>
+              {props.login ?
+                  <li className="nav-item">
+                    <Link onClick={props.doLogout} className="nav-link text-white" to="/signin">
+                      Logout
+                    </Link>
+                  </li>
+                  :
+                  <li className="nav-item">
+                    <Link className="nav-link text-white" to="/signin">
+                      Login
+                    </Link>
+                  </li>
+              }
               <li className="nav-item">
                 <Link className="nav-link text-white" to="/news">
                   News
@@ -55,4 +66,13 @@ const Navigation = () => {
     </div>
   );
 };
-export default Navigation;
+
+const mapStateToProps = (state) => {
+  return {
+    login: state.user.is_login,
+  };
+};
+
+const mapDispatchToProps = { doLogout};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Navigation);

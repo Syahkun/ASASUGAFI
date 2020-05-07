@@ -7,7 +7,8 @@ import SignIn from "../pages/SignIn";
 import Profile from "../pages/Profile";
 import Home from "../pages/Home";
 import CovidPage from "../pages/CovidPage";
-import CovidDetail from "../pages/CovidDetail";
+import News from "../pages/NewsPage";
+
 const MainRoutes = () => {
   return (
     <Provider store={store}>
@@ -16,10 +17,9 @@ const MainRoutes = () => {
           <Route exact path="/" component={Home} />
           <Route exact path="/covid" component={CovidPage} />
           <Route path="/covid-news/:category" component={CovidPage} />
-          {/*<Route exact path="/country/" component={CovidDetail} />*/}
           <Route exact path="/signin" component={SignIn} />
           <Route exact path="/profile" component={Profile} />
-          {/* <Route exact path="/news" component={News} /> */}
+          <Route exact path="/news" component={News} />
         </Switch>
       </BrowserRouter>
     </Provider>

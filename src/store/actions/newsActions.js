@@ -24,3 +24,22 @@ export const getListNews = () => {
             })
     }
 };
+export const getAllNews = () => {
+    return async (dispatch) => {
+        let url = baseUrl + '&apiKey=' + apiKey;
+        axios
+            .get(url)
+            .then((response) => {
+                console.log(response.data.news);
+                dispatch({
+                    type: "REQUEST_ALL_NEWS_SUCCESS",
+                    payload: response.data
+                })
+            })
+            .catch((error) => {
+                dispatch({
+                    type: "ACTIVATE_LOADING"
+                })
+            })
+    }
+};
