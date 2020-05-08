@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import { render } from "@testing-library/react";
 import "../css/style.css";
 import {doLogout} from "../store/actions/actionUser";
 import {connect} from "react-redux";

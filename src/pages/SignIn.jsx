@@ -1,13 +1,12 @@
 import React, { Component } from "react";
-// import SignInComp from "../components/SignInComp";
+
 import Header from "../components/Navigation";
 
 import { doLogin, changeInputUser } from "../store/actions/actionUser";
-// import { bindActionCreators } from "redux";
+
 import { connect } from "react-redux";
-// import { withRouter } from "react-router-dom";
-// import { bindActionCreators } from "redux";
 import Footer from "../components/Footer";
+
 class SignIn extends Component {
   postLogin = async () => {
     await this.props.doLogin();
@@ -18,12 +17,6 @@ class SignIn extends Component {
     }
   };
   render() {
-    // console.warn("Cek own props", this.props);
-
-    // const message = this.props.location.state
-    // ? this.props.location.state.message
-    // : "Masukan Inputnya";
-
     return (
       <React.Fragment>
         <Header {...this.props} />
