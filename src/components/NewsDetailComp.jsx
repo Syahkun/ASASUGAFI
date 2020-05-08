@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import "../css/style.css";
-import moment from "moment";
+// import moment from "moment";
 const NewsDetailComp = (props) => {
   const { title, author, description, publish, url } = props;
 

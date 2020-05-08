@@ -1,7 +1,7 @@
-import React, { Fragment, Component } from "react";
+import React, { Fragment } from "react";
 import CanvasJSReact from "../canvas/canvasjs.react";
 import "../css/style.css";
-const CanvasJS = CanvasJSReact.CanvasJS;
+// const CanvasJS = CanvasJSReact.CanvasJS;
 const CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
 const CovidDetailComp = (props) => {
@@ -10,11 +10,9 @@ const CovidDetailComp = (props) => {
     newCase,
     activeCase,
     criticalCase,
-    newDeath,
     recoveredCase,
     totalCase,
     totalDeath,
-    totalTest,
   } = props;
 
   const options = {
