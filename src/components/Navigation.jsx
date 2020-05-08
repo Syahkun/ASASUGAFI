@@ -10,14 +10,14 @@ const Navigation = (props) => {
     <div>
       <nav className="navbar navbar-expand-lg navbar-light">
         <div className="container">
-          <a className="navbar-brand" href="/">
+          <Link className="navbar-brand" to="/">
             <img
               className="App-logo"
               src={require("../images/logo.png")}
               style={{ width: "4vmax", height: "auto" }}
               alt="logo"
             />
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"

@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 
-const baseUrl = "https://api.currentsapi.services/v1/search?";
-const apiKey = "QVjLcZFyxk-QmQUf5Y8ZU4SxaH-XmWD-1cpOkq5ZUD8FrRjV";
+const baseUrl = process.env.REACT_APP_NEWS_API_URL;
+const apiKey = process.env.REACT_APP_NEWS_API_KEY;
 const urlHeadlines = baseUrl + "&apiKey=" + apiKey + "&keywords=corona";
 
 
