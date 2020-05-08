@@ -10,6 +10,8 @@ class NewsDetail extends React.Component {
         let filteredNews = listNews.filter((item) => {
             if (item.author !== null && item.title !== null && item.image !== null && item.image !== 'None' && item.description !== null) {
                 return item;
+            } else {
+                return false
             }
         });
         return (

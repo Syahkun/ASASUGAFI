@@ -3,7 +3,7 @@ import Navigation from "../components/Navigation";
 import {Link} from "react-router-dom";
 
 const NotMatch = (props) => {
-    const pathname = window.location.pathname;
+    // const pathname = window.location.pathname;
 
     return (
         <React.Fragment>
