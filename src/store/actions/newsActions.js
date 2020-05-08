@@ -11,7 +11,6 @@ export const getListNews = () => {
         axios
             .get(urlHeadlines)
             .then((response) => {
-                console.log(response.data.news);
                 dispatch({
                     type: "REQUEST_LIST_NEWS_SUCCESS",
                     payload: response.data
@@ -30,7 +29,6 @@ export const getAllNews = () => {
         axios
             .get(url)
             .then((response) => {
-                console.log(response.data.news);
                 dispatch({
                     type: "REQUEST_ALL_NEWS_SUCCESS",
                     payload: response.data

@@ -27,7 +27,6 @@ export const generateCovid = (country = "indonesia") => {
                 })
             })
             .catch((error) => {
-                console.log(error)
             })
 
     }
