@@ -4,13 +4,6 @@ import Header from "../components/Navigation";
 import { connect } from "react-redux";
 import Footer from "../components/Footer";
 const Profile = (props) => {
-  //get data is_login, email and full_name from local storage
-  // const is_login = JSON.parse(localStorage.getItem("is_login"));
-  // const email = localStorage.getItem("email");
-  // const full_name = localStorage.getItem("full_name");
-
-  //set condition when status login == nul, redirect to signin and
-  //show profile when is login is not null
   if (!props.dataUser.is_login) {
     return (
       <Redirect
@@ -61,4 +54,4 @@ const mapStateToProps = (state) => {
 };
 
 export default connect(mapStateToProps)(Profile);
-// export default Profile;
+

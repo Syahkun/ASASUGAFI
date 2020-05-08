@@ -1,7 +1,8 @@
 import React, { Fragment } from "react";
 import CanvasJSReact from "../canvas/canvasjs.react";
 import "../css/style.css";
-// const CanvasJS = CanvasJSReact.CanvasJS;
+
+
 const CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
 const CovidDetailComp = (props) => {

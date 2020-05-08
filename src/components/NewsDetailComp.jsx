@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 import "../css/style.css";
-// import moment from "moment";
 const NewsDetailComp = (props) => {
   const { title, author, description, publish, url } = props;
 
@@ -25,7 +24,6 @@ const NewsDetailComp = (props) => {
           <br />
           <p>Writer : {author}</p>
           <p>Published at {publish.slice(0, 10)}</p>
-          {/* <p>Last updated {moment(publish).fromNow()}</p> */}
         </div>
       </div>
     </Fragment>
