@@ -1,15 +1,19 @@
 import axios from 'axios';
 
+const rapidKey = process.env.REACT_APP_API_KEY;
+const rapidHost = process.env.REACT_APP_API_HOST;
+const urlCovid = process.env.REACT_APP_API_URL;
+console.warn("hey", rapidKey);
 export const generateCovid = (country = "indonesia") => {
     return async (dispatch) => {
 
         axios({
                 "method": "GET",
-                "url": "https://covid-193.p.rapidapi.com/statistics",
+                "url": urlCovid,
                 "headers": {
                     "content-type": "application/octet-stream",
-                    "x-rapidapi-host": "covid-193.p.rapidapi.com",
-                    "x-rapidapi-key": "5e8b8d3b3amsh87cd7a77913a2a5p196783jsncce3f0abe6f8"
+                    "x-rapidapi-host": rapidHost,
+                    "x-rapidapi-key": rapidKey
                 },
                 "params": {
                     "country": country
