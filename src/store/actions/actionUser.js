@@ -11,12 +11,13 @@ export const doLogin = (props) => {
         .post("https://sugawarawarakun.free.beeceptor.com/login", bodyRequest)
         .then(async (response) => {
             if (response.data.hasOwnProperty("username")) {
-                dispatch({ type: "SUCCESS_LOGIN", payload: response.data })
-                console.warn("cek response data",response)
+                dispatch({
+                    type: "SUCCESS_LOGIN",
+                    payload: response.data
+                })
             }
         })
         .catch(function (error) {
-            console.log(error);
         });
     };
 };
@@ -28,4 +29,4 @@ export const doLogout = (el) => {
         type: "LOG_OUT",
         payload: el,
     }
-}
+};

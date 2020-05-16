@@ -13,13 +13,13 @@ import newsReducers from "./reducers/newsReducers";
 const rootReducer = combineReducers({
     covid: covidReducers,
     user: userReducer,
-    news: newsReducers
+    news: newsReducers,
+
 });
 
 const store = createStore(rootReducer, applyMiddleware(thunk));
 store.subscribe(() => {
     console.log(store.getState());
-    console.log("from index.js")
 });
 
 export default store;
